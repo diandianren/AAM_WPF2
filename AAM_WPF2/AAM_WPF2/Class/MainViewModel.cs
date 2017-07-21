@@ -707,10 +707,9 @@ namespace AAM {
                 {
                     CancelOn =true;
                     int result = 0;
-                    await Task.Run(() => (result = _attocubeMeasurement.StartMeasurement()));// == 0);
+                    await Task.Run(() => (result = _attocubeMeasurement.StartMeasurement()));
 
-                    
-                    if(result!=0)//if (_attocubeMeasurement.StartMeasurement() != 0)
+                    if(result!=0)
                     {
                         if (_attocubeMeasurement.ErrorCode == 4099)
                         {
